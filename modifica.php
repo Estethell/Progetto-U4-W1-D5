@@ -16,7 +16,7 @@ include __DIR__ . '/includes/navbar.php';
 
 <h1 class="text-center my-5">Modifica libro</h1>
 
-<form class="m-auto w-50 mt-5" action="http://localhost:8080/Progetto%20U4-W1-D5/edit-logic.php"
+<form class="m-auto w-50 mt-5" action="http://localhost:8080/Progetto%20U4-W1-D5/modifica-logica.php"
     method="POST" novalidate>
     <input type="hidden" name="id" value="<?= $row['id'] ?>">
     <div class="mb-3">

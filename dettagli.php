@@ -19,8 +19,8 @@ include __DIR__ . '/includes/navbar.php';
         <h1 class="card-title"><?="$row[titolo]"?></h1>
         <h3 class="card-text"><?=$row['autore']?> <spam class="d-block"><?=$row['anno_pubblicazione']?></spam>  
         <spam class="d-block"><?=$row['genere']?></spam></p>
-        <a href="http://localhost:8080/Progetto%20U4-W1-D5/modifica.php<?= $row['id'] ?>" class="btn btn-success">Edit</a>
-        <a href="http://localhost:8080/Progetto%20U4-W1-D5/elimina.php<?= $row['id'] ?>" class="btn btn-danger">Elimina</a>
+        <a href="http://localhost:8080/Progetto%20U4-W1-D5/modifica.php?id=<?= $row['id'] ?>" class="btn btn-success">Modifica</a>
+        <a href="http://localhost:8080/Progetto%20U4-W1-D5/elimina.php?id=<?= $row['id'] ?>" class="btn btn-danger">Elimina</a>
     
     </div>
 </div>
