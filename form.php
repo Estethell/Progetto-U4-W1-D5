@@ -127,7 +127,7 @@ include __DIR__ . '/includes/navbar.php';?>
         </div>
  
 
-        <button type="submit" class="btn btn-primary">Invia</button>
+        <button type="submit" class="btn btn-primary rounded-5">Invia</button>
 
 
 

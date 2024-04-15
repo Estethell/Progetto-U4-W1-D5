@@ -58,9 +58,9 @@ include __DIR__ . '/includes/navbar.php';
     <h5 class="card-title"><?=  "$row[titolo]" ?></h5>
     <p class="card-text"><?=  "$row[autore]" ?></p>
     <div class="d-flex flex-column">
-        <a href="http://localhost:8080/Progetto%20U4-W1-D5/dettagli.php?id=<?= $row['id'] ?>" class="btn btn-primary m-1">Dettagli</a>
-        <a href="http://localhost:8080/Progetto%20U4-W1-D5/modifica.php?id=<?= $row['id'] ?>" class="btn btn-warning m-1">Modifica</a>
-        <a href="http://localhost:8080/Progetto%20U4-W1-D5/elimina.php?id=<?= $row['id'] ?>" class="btn btn-danger m-1">Elimina</a>
+        <a href="http://localhost:8080/Progetto%20U4-W1-D5/dettagli.php?id=<?= $row['id'] ?>" class="btn btn-warning m-1 rounded-5">Dettagli</a>
+        <a href="http://localhost:8080/Progetto%20U4-W1-D5/modifica.php?id=<?= $row['id'] ?>" class="btn btn-success m-1 rounded-5">Modifica</a>
+        <a href="http://localhost:8080/Progetto%20U4-W1-D5/elimina.php?id=<?= $row['id'] ?>" class="btn btn-danger m-1 rounded-5">Elimina</a>
     </div>
   </div>
 </div>

@@ -35,7 +35,7 @@ include __DIR__ . '/includes/navbar.php';
         <label for="genere" class="form-label">Genere del libro</label>
         <input type="text" class="form-control" id="genere" name="genere" value="<?= $row['genere'] ?>">
     </div>
-    <button type="submit" class="btn btn-success">Applica Modifiche</button>
+    <button type="submit" class="btn btn-info rounded-5">Applica Modifiche</button>
 </form>
 
 
