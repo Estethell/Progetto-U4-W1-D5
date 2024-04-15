@@ -69,6 +69,8 @@ $stmt->execute([
 
 };
 
+header("Location: http://localhost:8080/Progetto%20U4-W1-D5/index.php");
+
 
 
 
