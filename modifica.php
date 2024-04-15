@@ -14,7 +14,9 @@ include __DIR__ . '/includes/navbar.php';
 
 ?>
 
-<h1 class="text-center my-5">Modifica libro</h1>
+<div class="alert alert-warning mt-5" role="alert">
+<h1 class="text-center">Modifica libro</h1>
+</div>
 
 <form class="m-auto w-50 mt-5" action="http://localhost:8080/Progetto%20U4-W1-D5/modifica-logica.php"
     method="POST" novalidate>
@@ -35,7 +37,7 @@ include __DIR__ . '/includes/navbar.php';
         <label for="genere" class="form-label">Genere del libro</label>
         <input type="text" class="form-control" id="genere" name="genere" value="<?= $row['genere'] ?>">
     </div>
-    <button type="submit" class="btn btn-info rounded-5">Applica Modifiche</button>
+    <button type="submit" class="btn btn-info ">Applica Modifiche</button>
 </form>
 
 

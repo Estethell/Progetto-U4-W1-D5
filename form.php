@@ -108,7 +108,9 @@ include __DIR__ . '/includes/navbar.php';?>
     </style>
   </head>
   <body>
-    <h1 class="text center d-flex justify-content-center mt-5 ">Inserisci il tuo libro preferito qui</h1>
+<div class="alert alert-warning mt-5 container" role="alert">
+<h1 class="text center d-flex justify-content-center">Inserisci il tuo libro preferito qui</h1>
+</div>
     <div id="box">
       <form style="width: 500px" action="" method="post">   
         <div class="mb-3">

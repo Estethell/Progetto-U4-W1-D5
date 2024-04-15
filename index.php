@@ -33,8 +33,10 @@ include __DIR__ . '/includes/navbar.php';
 
 ?>
 
-
-    <h1 class="text-center mt-5">Benvenuto su PhPBooks!</h1>
+ 
+    <div class="alert alert-warning mt-5" role="alert">
+    <h1 class="text-center">Benvenuto su PhPBooks!</h1>
+</div>
 
     <form class="row gap-3 my-3 mt-5">
         <div class="col">
