@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2024 at 03:37 PM
+-- Generation Time: Apr 15, 2024 at 04:35 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `libri` (
   `id` int(11) NOT NULL,
-  `titolo` varchar(30) NOT NULL,
-  `autore` varchar(30) NOT NULL,
+  `titolo` varchar(200) NOT NULL,
+  `autore` varchar(200) NOT NULL,
   `anno_pubblicazione` int(4) NOT NULL,
-  `genere` varchar(30) NOT NULL
+  `genere` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -55,7 +55,10 @@ INSERT INTO `libri` (`id`, `titolo`, `autore`, `anno_pubblicazione`, `genere`) V
 (23, 'Madame Bovary', 'Gustave Flaubert', 1645, 'drammatico'),
 (24, 'Pippi Calzelunghe', 'Astrid Lindgren', 1915, 'Avventura, ragazzi, comico'),
 (25, 'I racconti di Canterbury', 'Geoffrey Chaucer', 1536, 'Storico'),
-(26, 'Il grande Gatsby', 'Scott Fitzgerald', 1921, 'drammatico');
+(26, 'Il grande Gatsby', 'Scott Fitzgerald', 1921, 'drammatico'),
+(28, 'Il potere del Cane', 'Non ricordo', 1986, 'Drammatico'),
+(29, 'Il signore degli anelli', 'Tolkien', 1924, 'Fantasy'),
+(30, 'Lo Hobbit', 'Tolkien', 1950, 'Fantasy');
 
 --
 -- Indexes for dumped tables
@@ -75,7 +78,7 @@ ALTER TABLE `libri`
 -- AUTO_INCREMENT for table `libri`
 --
 ALTER TABLE `libri`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
