@@ -37,11 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
      // validare i dati
 
-    if (strlen($titolo) > 30) {
+    if (strlen($titolo)) {
         $errors['titolo'][] = 'Titolo non valido';
     }
 
-    if (strlen($autore) > 30) {
+    if (strlen($autore)) {
         $errors['autore'][] = 'Autore non trovato';
     } 
     
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errors['anno_pubblicazione'][] = 'Anno non valido';
     }
 
-    if (strlen($genere) > 30) {
+    if (strlen($genere)) {
       $errors['genere'][] = 'Genere non valido';
   } 
 
