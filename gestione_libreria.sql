@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2024 at 04:35 PM
+-- Generation Time: Apr 15, 2024 at 04:39 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `gestione_libreria`
 --
+CREATE DATABASE IF NOT EXISTS `gestione_libreria` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `gestione_libreria`;
 
 -- --------------------------------------------------------
 
@@ -27,6 +29,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `libri`
 --
 
+DROP TABLE IF EXISTS `libri`;
 CREATE TABLE `libri` (
   `id` int(11) NOT NULL,
   `titolo` varchar(200) NOT NULL,
