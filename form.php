@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $errors['genere'][] = 'Genere non valido';
   } 
 
-    echo '<pre>' . print_r($errors, true) . '</pre>';
+    // echo '<pre>' . print_r($errors, true) . '</pre>';
     
   if ($errors == []) {
 
@@ -72,7 +72,8 @@ $stmt->execute([
 
 
 
-} ?>
+} 
+include __DIR__ . '/includes/navbar.php';?>
 
 
 
@@ -88,29 +89,28 @@ $stmt->execute([
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Inserisci il tuo libro</title>
     <style>
       #box {
         display: flex;
         justify-content: center;
         margin-top: 100px;
-        border: 1px solid grey;
-        border-radius: 10px;
         padding: 10px;
       }
       body {
-        background-color: aquamarine ;
+        background-color: aquamarine;
       }
       form {
-        background-color: aquamarine ;
+        background-color: aquamarine;
       }
     </style>
   </head>
   <body>
+    <h1 class="text center d-flex justify-content-center mt-5 ">Inserisci il tuo libro preferito qui</h1>
     <div id="box">
       <form style="width: 500px" action="" method="post">   
         <div class="mb-3">
-          <label for="titolo" class="form-label">Titolo libro</label>
+          <label for="titolo" class="form-label">Titolo del libro</label>
           <input type="text" class="form-control" name="titolo" id="titolo" />
         </div>
         <div class="mb-3">
